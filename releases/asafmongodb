@@ -2,13 +2,13 @@
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
-  name: mongodb
+  name: mongomongo
   namespace: test
   annotations:
     fluxcd.io/automated: "false"
     fluxcd.io/tag.chart-image: semver:~4.0
 spec:
-  releaseName: mongodb
+  releaseName: mongomongo
   chart:
     repository: https://kubernetes-charts.storage.googleapis.com/
     name: mongodb
